@@ -1,3 +1,5 @@
+// this file can not pass the compile
+//
 #include<iostream>
 #include<cstdio>
 using namespace std;
