@@ -1,0 +1,3 @@
+this is a shell script to show you the function call relations of your program
+
+it is based on valgrind and python,please install them before using.
