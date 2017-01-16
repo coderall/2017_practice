@@ -1,0 +1,37 @@
+/*
+this is a simple specification about gothack implementation
+*/
+
+step one:
+
+compile the gothack.c without any special gcc flag
+
+step two:
+
+run readelf -f gothack | grep printf to get the got entry about printf
+
+step three:
+
+run ./gothack the number get from step two (column one) or gdb
+
+you can see the program terminated for unknown addr(EIP or IP register with some illegal number)
+
+
+/*on the other hand*/
+
+step one:
+
+compile the gothack.c with -Wl,-z,relro,-z,now 
+
+like this:
+    
+    gcc -g gothack.c -Wl,-z,relro,-z,now -o gothack
+
+other steps are the same
+
+run the program with the got entry number or gdb
+
+you can see the program terminated for recieving the SIGSEGV signal,it is because we make the got read-only
+
+
+
