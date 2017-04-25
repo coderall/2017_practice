@@ -5,6 +5,8 @@
 
 #!/bin/bash
 
+# pushd and popd is a builtin command of bash
+
 homedir=~/
 
 pushd $homedir
