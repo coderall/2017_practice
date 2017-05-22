@@ -17,16 +17,20 @@ show index from database.tablename
 
 # No.3 show table status
 
-show table status from database
+show table status from database;
 
 # No.4 look the select plan
 
-explain sql_statement
+explain sql_statement;
 
 # No.5 look the variable value
 
-show variables like '%var%'
+show variables like '%var%';
 
 # No.6 check the table 
 
-check table tablename [options]
+check table tablename [options];
+
+# No.7 check the engine status
+
+show engine innodb status \G;
