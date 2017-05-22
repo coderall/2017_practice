@@ -26,3 +26,7 @@ explain sql_statement
 # No.5 look the variable value
 
 show variables like '%var%'
+
+# No.6 check the table 
+
+check table tablename [options]
