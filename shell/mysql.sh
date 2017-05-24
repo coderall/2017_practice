@@ -34,3 +34,7 @@ check table tablename [options];
 # No.7 check the engine status
 
 show engine innodb status \G;
+
+# No.8 get the last insert id
+
+select last_insert_id() || last_insert_id()   # please note that last_insert_id is multi client safe!!!
