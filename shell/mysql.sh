@@ -38,3 +38,11 @@ show engine innodb status \G;
 # No.8 get the last insert id
 
 select last_insert_id() || last_insert_id()   # please note that last_insert_id is multi client safe!!!
+
+# No.9 get the primary key
+
+select iID,_rowid from tablename;
+# note if the table have a composite primary key ,the _rowid is useless
+
+# No.10 execute shell command 
+system ls / or some other command
