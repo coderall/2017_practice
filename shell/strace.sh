@@ -16,3 +16,6 @@ strace -ttt -T -p (some pid)
 # No.2 print the most busy function of your program
 
 strace -cfp (some pid)
+
+# No.3 trace the syscall of process
+strace ls || strace your_program
