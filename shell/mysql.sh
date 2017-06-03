@@ -52,3 +52,7 @@ select current_user();
 
 # No.12 get the innodb lock info , please use infomation_schema database
 select * from innodb_locks
+
+# No.13 show the process list and get the staus
+# note it is useful for solve perfomance problem
+show full processlist;
