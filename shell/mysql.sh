@@ -46,3 +46,9 @@ select iID,_rowid from tablename;
 
 # No.10 execute shell command 
 system ls / or some other command
+
+# No.11 get who is the current user
+select current_user();
+
+# No.12 get the innodb lock info , please use infomation_schema database
+select * from innodb_locks
