@@ -56,3 +56,6 @@ select * from innodb_locks
 # No.13 show the process list and get the staus
 # note it is useful for solve perfomance problem
 show full processlist;
+
+# No.14 get current database
+select database();
