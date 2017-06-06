@@ -59,3 +59,6 @@ show full processlist;
 
 # No.14 get current database
 select database();
+
+# No.15 get table index info
+show index from tablename;
