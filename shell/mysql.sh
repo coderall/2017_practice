@@ -62,3 +62,14 @@ select database();
 
 # No.15 get table index info
 show index from tablename;
+
+# No.16 get mysql version info
+select version();
+
+# No.17 analyze the key distribution of table and get the statistics
+analyze table tablename;
+
+# Note this operation will add a shared lock on the table which will blockthe write operation
+
+# No.18 maybe the basic command 
+\h;
