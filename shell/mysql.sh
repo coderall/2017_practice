@@ -73,3 +73,8 @@ analyze table tablename;
 
 # No.18 maybe the basic command 
 \h;
+
+# No.19 get the last query cost
+show status like 'last_query_cost';
+
+# get the query may visit how much pages,it is mostly useful for two SQL statement compare
