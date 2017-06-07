@@ -78,3 +78,8 @@ analyze table tablename;
 show status like 'last_query_cost';
 
 # get the query may visit how much pages,it is mostly useful for two SQL statement compare
+
+# No.20
+show variables like 'optimizer_switch';
+
+# the variable itselft is not special,but in version 5.6+ there is MRR(mutli-range read) and ICP(index condition pushdown) that can accelerate the query
