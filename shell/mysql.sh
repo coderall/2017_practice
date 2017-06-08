@@ -83,3 +83,7 @@ show status like 'last_query_cost';
 show variables like 'optimizer_switch';
 
 # the variable itselft is not special,but in version 5.6+ there is MRR(mutli-range read) and ICP(index condition pushdown) that can accelerate the query
+
+# No.21 show the innodb lock info
+# you may get some other lock infomation from table innodb_lock_wait
+show engine innodb mutex;
