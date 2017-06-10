@@ -87,3 +87,10 @@ show variables like 'optimizer_switch';
 # No.21 show the innodb lock info
 # you may get some other lock infomation from table innodb_lock_wait
 show engine innodb mutex;
+
+# No.22 begin
+begin;
+# note this command will begin a transaction and set autocommit=0 defaultly because of autocommit will commit a transaction after every command run
+
+# No.23 get the current transaction isolation level
+show variables like '%tx_isolation%';
