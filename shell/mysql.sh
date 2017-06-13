@@ -94,3 +94,9 @@ begin;
 
 # No.23 get the current transaction isolation level
 show variables like '%tx_isolation%';
+
+# No.24 get the Com_xxx the times of xxx command have been executed
+show global status like '%Com_commit%';
+show global status like '%Com_update%';
+
+# note: you may use this method to calculate the TPS
