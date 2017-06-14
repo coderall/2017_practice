@@ -1,0 +1,9 @@
+# simple redis set command
+
+set key value
+
+# No.1 simple set
+
+set k1 v1
+
+
