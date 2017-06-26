@@ -13,3 +13,6 @@ awk -F ' ' '{print $1 $2}'
 # No.2 match some pattern and get the column
 awk -F ' ' '/pattern/{print $1 $2}'
 
+# No.3 the last parameter the $NF stands for the last parameter
+awk -F ' ' '/pattern/{print $NF}'
+
