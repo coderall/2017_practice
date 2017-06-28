@@ -100,3 +100,6 @@ show global status like '%Com_commit%';
 show global status like '%Com_update%';
 
 # note: you may use this method to calculate the TPS
+
+# No.25 get current date
+select current_date;
