@@ -103,3 +103,7 @@ show global status like '%Com_update%';
 
 # No.25 get current date
 select current_date;
+
+# No.26 explain extended obtain additional execution plan information
+explain extended select * from tbTable where iID=1;
+
