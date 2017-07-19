@@ -19,3 +19,9 @@ strace -cfp (some pid)
 
 # No.3 trace the syscall of process
 strace ls || strace your_program
+
+# No.4 trace the specific syscall time consume 
+strace -ce gettimeofday ./test.sh   # To get the time consumed on syscall gettimeofday
+strace -ce all ./test.sh            # To get all the syscall time consume
+# -f options can trace the child process
+strace -cef all ./test.sh           # this can get different result comparing the example above
