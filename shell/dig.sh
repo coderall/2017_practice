@@ -7,4 +7,5 @@
 
 # dig is a DNS lookup tool
 
-
+# No.1 trace the DNS
+dig +trace www.baidu.com
