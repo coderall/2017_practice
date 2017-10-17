@@ -24,3 +24,6 @@ grep -e "PATTERN1" file | grep -e "PATTERN2" | grep -e "PATTERN3" ... and so on
 
 # No.6 get the only matched pattern
 echo '123456' | grep -E '[0-9]+' -o   # -o means Print  only  the matched (non-empty) parts of a matching line
+
+# No.7 get the invert match (do not match the candidate word)
+grep -v word
