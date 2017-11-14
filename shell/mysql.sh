@@ -107,3 +107,8 @@ select current_date;
 # No.26 explain extended obtain additional execution plan information
 explain extended select * from tbTable where iID=1;
 
+# No.27 start mysql faster
+mysql -h*.*.*.* -u* -p* database -A
+# note:the -A option shutdown the auto-completion of the table or column name which will read the metadata of table and may blocked by some 
+# other DML operation
+
