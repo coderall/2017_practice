@@ -14,3 +14,9 @@ sed -e 's/pattern1/pattern2/g'
 echo "123abc" | sed -e 's/\([0-9]\+\)abc/\1/' 
 # Note \(...\) is a pattern for match,it does not delete the unmatch string
 # echo "123abc" | sed -e 's/\([0-9]\+\)/\1/' the result is differnt
+
+# No.3 replace the newline seperator to a new character
+sed ':a;N;$!ba;s/\n/,/g' test.txt > new_file
+
+# Note in the default situation the sed will stop the match when getting the '\n',so if you want to replace the '\n',
+# you may use some special skills the get it
