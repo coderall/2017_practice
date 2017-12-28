@@ -21,3 +21,7 @@ find / -name filename -mtime n -type f
 find / -name filename -type f -exec du -s -h '{}' \;
 find / -name filename -type f -exec file '{}' \;
 find / -name filename -type f -exec rm '{}' \;
+
+# Note.4 recursively find the empty dir and delete
+find . -type d -empty -print
+find . -type d -empty -delete
