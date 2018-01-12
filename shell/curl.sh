@@ -10,3 +10,6 @@ curl -X POST http://test.com --trace trace.txt
 
 # Note.3 continue the download from last break point with timeout
 curl -C - http://url -o your_file_name -m 300
+
+# Note.4 get your public ip
+curl ipinfo.io
