@@ -20,3 +20,5 @@ ctrl+k   # clear the command line from current position to the top right
 # No.4 get the last command's last parameter
 echo _$
 
+# No.5 get the pid of this shell
+echo "$$"
