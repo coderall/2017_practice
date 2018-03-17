@@ -11,3 +11,6 @@
 # you will never open the txt,it's a hack
 vim +q test.txt
 
+# No.2 get the diff info of two file
+vim -d file1 file2
+
