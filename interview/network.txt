@@ -1,0 +1,66 @@
+--- some popular network interview questions,mostly about TCP/IP ---
+--- TCP/IP 常见网络面试 笔试题 ---
+
+// UDP
+
+1、UDP 可以使用connect吗？
+
+2、UDP recvfrom 100字节，这时来了个 150字节的数据包，会发生什么？ 如果来了一个 80字节的数据包呢？
+
+3、怎样明确知道对方收到了UDP数据包？
+
+4、怎样用UDP来模拟TCP？
+
+5、UDP怎么flush？
+
+6、UDP包头长度多少，分别都有哪些字段，有什么用？
+
+7、UDP最大发送长度是多少？需要分片吗？
+
+8、UDP需要用到路径MTU吗？
+
+9、UDP应用场景？现在有哪些知名软件在使用UDP？
+
+10、epoll 中可以添加UDP socket 吗？
+
+// TCP
+
+1、详细描述TCP三次握手过程，包括序列号，头部类型标识
+
+2、第一个SYN包的序列号从哪来？
+
+3、后面通信过程中的序列号怎么更新？是send一次 序列号+1 还是？
+
+4、TCP端口号最大数量多少？应用程序能使用的有多少？
+
+5、同一个客户端socket，是否可以同时连接多个服务端socket？
+
+6、客户端可以创建多少个socket？(同一个IP地址)
+
+7、epoll poll select 区别与联系？
+
+8、epoll 中 LT ET 区别，使用场景？
+
+9、EPOLL_ONESHOT 应用于哪种场景，作用是什么？
+
+10、accept 惊群问题描述？怎么解决？（内核中解决方案，应用层解决方案）
+
+11、time_wait 状态作用是什么？
+
+12、怎样避免出现 time_wait
+
+13、在不开启keep-alive机制的情况下，TCP连接建立后，在不发送数据的情况下，立即切断网线，双方会有感知吗？如果某一方发送数据，会有感知吗？
+
+14、同一个IP，同一个端口号，可以分别创建一个UDP socket，一个TCP socket吗？
+
+15、CLOSE_WAIT 状态出现在哪一端？
+
+16、SYN blood 攻击原理 及 危害？
+
+17、怎样防止 SYN blood？
+
+18、大概解释下 SYN cookies 原理？
+
+19、简单描述下 google 提出的 BBR 拥塞控制算法，所有内核版本都适用吗？
+
+20、所有 TCP UDP 接收的数据是否 都 需要 考虑字节序转换？
