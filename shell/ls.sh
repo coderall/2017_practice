@@ -25,4 +25,7 @@ ls -c some_dir
 # No.5 sort by file mtime
 ls -t some_dir
 
+# No.6 get the human readable file size with ll
+ll -h some_dir
+
 # Note: with multi options the sort order may change,please see the detail of man page before you use
