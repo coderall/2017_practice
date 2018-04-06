@@ -59,3 +59,5 @@
 29、简单描述下 one-thread-per-connection 模式？
 
 30、简单描述下 thread cache，以及实现？
+
+31、order by 遇到NULL值时的行为是怎样的？partition操作呢？（提示：一样的行为，MySQL保证NULL比所有非NULL值要小，当然遇到HASH 函数，NULL值转换为数字0参与计算）
