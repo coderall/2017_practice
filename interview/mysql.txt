@@ -61,3 +61,9 @@
 30、简单描述下 thread cache，以及实现？
 
 31、order by 遇到NULL值时的行为是怎样的？partition操作呢？（提示：一样的行为，MySQL保证NULL比所有非NULL值要小，当然遇到HASH 函数，NULL值转换为数字0参与计算）
+
+32、select ... for share mode 加读锁还是写锁？
+
+33、select ... for update 加读锁还是写锁？在任何情况下都会加锁吗(考虑 start trasaction 或 autocommit=0 )
+
+34、MySQL中读不加锁 这句话对吗？如果不对，在哪些读操作下会加锁？(典型的如 metadata locking)
