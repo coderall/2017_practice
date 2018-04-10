@@ -67,3 +67,5 @@
 33、select ... for update 加读锁还是写锁？在任何情况下都会加锁吗(考虑 start trasaction 或 autocommit=0 )
 
 34、MySQL中读不加锁 这句话对吗？如果不对，在哪些读操作下会加锁？(典型的如 metadata locking)
+
+35、select count(*) 在MyISAM引擎和InnoDB引擎中有什么不同？(MyISAM数据存储在表元数据中，读取时间O(1))
