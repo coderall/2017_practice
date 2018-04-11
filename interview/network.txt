@@ -97,3 +97,8 @@
 
 // 其他相关
 1、iptables实现原理，使用了哪些算法？
+
+2、普通的文件描述符 可以使用select 吗？有什么效果？
+  （答案：File descriptors associated with regular files always select true for ready to read, ready to write, and error conditions.）
+  
+3、普通的文件描述符可以添加进 epoll 中吗？
