@@ -61,3 +61,7 @@
 30、简单描述下 thread cache，以及实现？
 
 31、order by 遇到NULL值时的行为是怎样的？partition操作呢？（提示：一样的行为，MySQL保证NULL比所有非NULL值要小，当然遇到HASH 函数，NULL值转换为数字0参与计算）
+
+32、MySQL的 master-slave模式中，主从之间的网络需要一直保持畅通吗？为什么？
+
+33、flush table 的作用有哪些？
