@@ -1,0 +1,12 @@
+// list some C & C++ interviw questions
+
+// TL;DR for C++ questions
+
+// C and glibc basics
+
+1、printf 函数的返回值是什么，表示什么？
+
+2、scanf 函数的返回值是什么，表示什么？
+
+3、snprintf 函数第二个参数表示什么意思？ 返回值表示什么意思？
+   tips：函数原型为 int snprintf(char *str, size_t size, const char *format, ...);
