@@ -102,3 +102,15 @@
   （答案：File descriptors associated with regular files always select true for ready to read, ready to write, and error conditions.）
   
 3、普通的文件描述符可以添加进 epoll 中吗？
+
+4、路由查找使用什么数据结构？
+
+5、什么是NAPI？有什么作用？
+
+6、NAPI怎么解决可能的CPU占用过高问题？
+
+7、什么是netfilter？
+
+8、netfilter都有哪些hook点，对应于网络通信哪些过程？
+
+9、什么是LVS？有什么作用？
