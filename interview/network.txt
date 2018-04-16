@@ -95,6 +95,14 @@
 
 34、TCP_NODELAY 标志有什么作用？
 
+35、SO_REUSEADDR 标志有什么作用？
+
+36、SO_REUSEPORT 标志有什么作用？
+
+37、SO_REUSEADDR 和 SO_REUSEPORT有什么区别？使用中分别要注意什么？
+
+38、什么是通配地址？
+
 // 其他相关
 1、iptables实现原理，使用了哪些算法？
 
