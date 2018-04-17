@@ -10,3 +10,7 @@
 
 3、snprintf 函数第二个参数表示什么意思？ 返回值表示什么意思？
    tips：函数原型为 int snprintf(char *str, size_t size, const char *format, ...);
+   
+4、简单描述下 atof 的实现？
+
+5、double a = 0.1;printf("%.5f\n",a); printf 中 .5 什么意思？
