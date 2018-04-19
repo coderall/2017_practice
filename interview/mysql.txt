@@ -88,3 +88,5 @@
 43、什么是 dirty read （脏读）？
 
 44、什么是 phantom read（幻读）？
+
+45、什么是 MVCC？
