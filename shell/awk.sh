@@ -23,3 +23,6 @@ test1=${arr[0]}
 test2=${arr[1]}
 test3=${arr[2]}
 # now you can execute your own logic by this variable
+
+# No.5 count words frequence
+awk -F ' ' '{for(i=1;i<=NF;i++) a[$i]++} END {for(k in a) printf("%s %d\n",k,a[k])}' words.txt
