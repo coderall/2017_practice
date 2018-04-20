@@ -24,3 +24,13 @@
 9、#define SQR(x) ((x)*(x)) 这个宏定义用来计算x的平方，会有哪些问题，解决方法是什么？
 
 10、 内核中宏定义 #define func(x) do{ do_something }while(0) 表示什么意思，为什么这样写？
+
+11、isspace isalpha 等函数的参数是什么？如果直接将一个char类型赋值给这个函数可能会导致什么问题？怎么改正？
+   （tips：考虑char类型的符号位扩展，尤其是通过字符指针传入参数时）
+   
+12、getchar 函数的返回值是什么？为什么这么设计？
+
+13、在struct中使用位域时，如果类型为int但是只有1bit，会有什么问题？
+   （tips：考虑符号位，最好使用unsigned int）
+   
+14、64位机器上 sizeof(long double) 输出多少？
