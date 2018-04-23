@@ -60,6 +60,8 @@
 
 29、怎样避免程序被调试执行（安全相关）？
     tips：PTRACE_TRACEME & SIGTRAP handler & /proc/self/status
+ 
+30、简单解释下 vsyscall & vdso ？
 
 
 // 内存管理
