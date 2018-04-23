@@ -1,6 +1,6 @@
 --- 内核相关面试题目汇总 ---
 
-// CPU 调度
+// CPU 调度&进程管理
 
 1、简单介绍下 O(1)调度算法
 
@@ -57,6 +57,9 @@
 27、解释下 sched_yield 函数？
 
 28、怎样查看系统是否支持cgroup？
+
+29、怎样避免程序被调试执行（安全相关）？
+    tips：PTRACE_TRACEME & SIGTRAP handler & /proc/self/status
 
 
 // 内存管理
