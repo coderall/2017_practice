@@ -122,3 +122,7 @@
 8、netfilter都有哪些hook点，对应于网络通信哪些过程？
 
 9、什么是LVS？有什么作用？
+
+10、netfilter都有哪些hook点？
+
+11、tcpdump工作原理？
