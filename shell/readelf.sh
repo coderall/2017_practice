@@ -13,3 +13,6 @@ readelf -S some_executable_file
 
 # Note.4 read the relocs address info
 readelf -r some_executable_file
+
+# No.5 get the note section info
+readelf -n some_executable_file
