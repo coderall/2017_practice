@@ -10,3 +10,6 @@ readelf -l some_executable_file
 
 # Note.3 read the section headers of elf file
 readelf -S some_executable_file
+
+# Note.4 read the relocs address info
+readelf -r some_executable_file
