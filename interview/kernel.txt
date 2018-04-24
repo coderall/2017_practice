@@ -63,6 +63,10 @@
  
 30、简单解释下 vsyscall & vdso ？
 
+31、/proc/kcore文件有什么用？
+
+32、/proc/kallsyms文件有什么用？
+
 
 // 内存管理
 
