@@ -90,3 +90,6 @@
 44、什么是 phantom read（幻读）？
 
 45、什么是 MVCC？
+
+46、MySQL中是否支持session级的隔离级别？
+    (tips: set global|session transaction 命令行命令)
