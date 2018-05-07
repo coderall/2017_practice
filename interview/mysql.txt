@@ -93,3 +93,9 @@
 
 46、MySQL中是否支持session级的隔离级别？
     (tips: set global|session transaction 命令行命令)
+    
+47、简单描述下gap-lock算法？
+
+48、简单描述下next-key lock算法？
+
+49、innodb_locks_unsafe_for_binlog 这个参数有什么作用？为什么开启后有可能产生幻读？
