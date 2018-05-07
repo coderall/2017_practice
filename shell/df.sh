@@ -5,6 +5,9 @@
 
 #!/bin/bash
 
-# No.1 get the disk space info and the mount info
+# No.1 get the disk mount info and space available info
+df -h
 
-du -ah
+# No.2 print the file system type info
+df -Th
+
