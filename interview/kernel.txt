@@ -67,6 +67,17 @@
 
 32、/proc/kallsyms文件有什么用？
 
+33、linux的线程实现方式？
+
+34、简单描述下线程组中接收到信号的处理？
+
+35、task_struct结构中pid，tgid的作用？
+
+36、getpid(),gettid()实现？
+   (tips:getpid其实取的值是tgid，gettid取的值是pid，有点绕。其实还是和LWP的实现方式相关)
+   
+37、pthread_self() 又是怎么实现的呢？和上面两个函数的区别和联系分别是什么？
+
 
 // 内存管理
 
