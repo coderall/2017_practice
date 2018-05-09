@@ -1,6 +1,6 @@
 # 2017_practice
 
-Here is my personal program practice in 2017 , and 2018 now.
+Here is my personal program practice in 2017 , and 2018 now.(2017 is also the beginning i start play git~)
 
 Note:
 
