@@ -85,6 +85,8 @@
 40、preempt_enable是一个抢占点吗？为什么？
 	（tips：在preemt_enable函数中，会尝试抢占执行，具体参考源码实现）
 
+41、sysenter和sysexit指令实现了什么功能？
+
 
 // 内存管理
 
