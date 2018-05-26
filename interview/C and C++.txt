@@ -60,3 +60,14 @@
 
 // C++ (boring)
 1、C++的三大特征是什么？
+
+2、简单介绍下C++ bind？
+
+3、string的erase和clear有什么区别？
+
+4、怎样清空string申请的空间？（可以调用上面两个函数吗？）
+
+5、怎样清空一个vector（包括释放空间）？
+   tips：swap
+清空
+
