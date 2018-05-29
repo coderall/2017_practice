@@ -123,6 +123,11 @@
 
 47、内核是怎么解决 sequence id 回绕的？
 
+// http
+1、什么是CNAME？
+
+2、http PUT和POST有什么区别？
+
 // 其他相关
 1、iptables实现原理，使用了哪些算法？
 
