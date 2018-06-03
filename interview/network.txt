@@ -132,6 +132,8 @@
 
 2、http PUT和POST有什么区别？
 
+3、http header中 content-type 域表示什么？
+
 // 其他相关
 1、iptables实现原理，使用了哪些算法？
 
