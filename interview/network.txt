@@ -142,6 +142,9 @@
 
 6、https默认监听哪个端口？
 
+7、什么是Restful API？
+   （tips：用URI定位资源，用HTTP动词来描述操作）
+
 // 其他相关
 1、iptables实现原理，使用了哪些算法？
 
