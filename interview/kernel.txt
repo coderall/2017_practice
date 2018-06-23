@@ -107,6 +107,8 @@
 50、pread和pwrite在哪种场合下使用较多？
     （tips：因为pread和pwrite的操作不修改对应fd的offset，所以在多线程读写方面有优势）
 
+51、access_ok 宏有什么作用？
+
 // 内存管理
 
 1、malloc的实现
