@@ -133,6 +133,20 @@
 
 52、epoll的实现中使用了哪些数据结构？
 
+53、简单描述下BGP协议？基于IP实现还是TCP？
+
+54、什么是BGP带宽？
+
+55、AS是什么？
+
+56、UPD socket什么时候可以使用read，什么时候可以使用write？
+
+57、服务器端出现大量CLOSE_WAIT状态的socket的原因有哪些？
+
+58、LVS中负载均衡的实现都有哪些方式，有哪些优化方式？
+
+59、SO_REUSEPORT的内核实现？
+
 // http
 1、什么是CNAME？
 
