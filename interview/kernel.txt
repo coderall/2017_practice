@@ -115,6 +115,9 @@
 
 54、Intel 的 Skylake 和 Broadwell架构有什么区别，带来了什么影响？
 
+55、spinlock怎么实现？（考虑多核情况）
+	（tips：当前内核中采用ticket-based算法来实现）
+
 // 内存管理
 
 1、malloc的实现
