@@ -14,3 +14,6 @@ vim +q test.txt
 # No.2 get the diff info of two file
 vim -d file1 file2
 
+# No.3 go the specific line you want
+vim +lines test.txt // vim +60 test.txt
+
