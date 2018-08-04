@@ -7,3 +7,6 @@ du -h --max-depth=1 *
 
 # No.2 calculate all files disk usage with the hidding directory
 du -sch .[!.]* *
+
+# No.3 du exclude some directory
+du -h --exclude="./some/path/you/want/exclude"
