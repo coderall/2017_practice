@@ -281,6 +281,12 @@
 
 48、文件系统挂载时的选项 noatime nodiratime 表示什么意思，为什么要这样做？
 
+49、struct file 结构中的 address_space 表示什么？
+
+50、什么是反向映射？解决什么问题？
+
+51、存meta信息的页在 address_space 中吗？
+
 // 其他
 
 1、内核和用户空间通信都有哪些方法？
