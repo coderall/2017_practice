@@ -157,6 +157,18 @@
 
 64、使用DNS做全局负载均衡有什么缺点？
 
+65、服务端出现大量TIME_WAIT状态的socket的原因有哪些？
+
+66、大量TIME_WAIT socket对服务端有什么影响？
+
+67、tcp_tw_reuse 变量有什么作用？
+
+68、tcp_tw_recycle 变量有什么作用？
+
+69、ip_local_port_range 变量有什么作用？
+
+70、上述几个变量怎么解决 No.66 中TIME_WAIT 过多的问题？
+
 // http
 1、什么是CNAME？
 
