@@ -75,4 +75,18 @@
 
 5、怎样清空一个vector（包括释放空间）？
    tips：swap
+   
+6、vector 容器调用 resize(0) 作用是什么？
+
+7、vector 容器的 erase 函数返回值是什么？
+
+8、vector 容器的 empty 函数的实现是？
+
+9、vector 容器的 end 函数的实现是什么？
+
+10、vector 容器的 size 函数的实现是什么？
+
+11、vector 容器的 capacity 函数的实现是什么？
+
+12、典型的 vector 容器的类对象 sizeof 值是？ 有哪些成员变量？
 
