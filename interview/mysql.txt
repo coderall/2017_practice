@@ -167,3 +167,17 @@
 
 81、master-slave 模式中 semi-sync ？
 
+82、什么是XA事务？
+
+83、什么是内部XA事务？
+
+84、使用XA事务时，对数据库隔离级别有没有要求？
+
+85、binlog 和 redolog 采用什么方法来保证数据一致性？
+	（tips：2PC）
+	
+86、在XA事务中，Resource Manger这个角色由谁来担任？Transaction Manager这个角色由谁来担任？
+
+87、sync_binlog 参数表示什么意思？
+
+88、数据库crash recovery时，以binlog为准呢，还是以redo log为准？
