@@ -165,3 +165,5 @@
 
 80、master-slave 模型中 同步模式有哪几种？
 
+81、master-slave 模式中 semi-sync ？
+
