@@ -181,3 +181,7 @@
 87、sync_binlog 参数表示什么意思？
 
 88、数据库crash recovery时，以binlog为准呢，还是以redo log为准？
+
+89、MySQL中的表名是大小写敏感的吗？
+
+90、MySQL中的select语句判断 字符列 时 大小写敏感吗？
