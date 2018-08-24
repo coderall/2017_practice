@@ -287,6 +287,13 @@
 
 51、存meta信息的页在 address_space 中吗？
 
+52、task_struct 结构中 prio,static_prio,normal_prio,rt_prio 字段分别表示什么意思？
+	（tips：prio表示的是真实的优先级，static_prio和nice的操作关系密切，normal_prio表示的静态优先级的概念，fork时，子进程的static_prio=父进程的normal_prio
+	  nice操作通过修改static_prio来影响优先级，进而计算进程对应的weight值，weight值呢又影响了CFS调度中vruntime增加的速度，联想对应PDF中不同nice值的进程
+	  的vruntime增长速度图）
+
+53、nice的操作是怎样影响CFS调度器行为的？
+
 // 其他
 
 1、内核和用户空间通信都有哪些方法？
