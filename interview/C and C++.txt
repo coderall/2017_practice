@@ -94,3 +94,8 @@
 
 14、新创建的空容器，调用reserve(5)，真正申请的空间是多大？
 
+15、cout怎么设置浮点数的打印精度？
+	（tips：std::fixed,std::setprecision()）
+
+16、cin怎么判断 EOF？有哪些需要注意的点？
+	（tips：使用 cin.eof()来判断，使用时，需要先调用cin来尝试输入数据，再调用判断）
