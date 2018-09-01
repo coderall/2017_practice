@@ -10,7 +10,9 @@
 # this is a simple gdb use case show
 
 # No.1 debug the core file
-
 gdb -c corefile binfile
+
+# No.2 set the param str length
+set print elements 64
 
 
