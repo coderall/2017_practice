@@ -25,3 +25,6 @@ strace -ce gettimeofday ./test.sh   # To get the time consumed on syscall gettim
 strace -ce all ./test.sh            # To get all the syscall time consume
 # -f options can trace the child process
 strace -cef all ./test.sh           # this can get different result comparing the example above
+
+# No.5 set the param string show length
+strace -s strsize "your_program"
