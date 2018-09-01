@@ -18,7 +18,17 @@ ctrl+d   # and ctrl+a ctrl+e
 ctrl+k   # clear the command line from current position to the top right
 
 # No.4 get the last command's last parameter
-echo _$
+echo $_
 
 # No.5 get the pid of this shell
 echo "$$"
+
+# No.6 print command result
+set -x
+
+# No.7 exit when error occurs
+set -e
+
+# No.8 trap some signals
+trap my_func ERR
+trap "" HUP
