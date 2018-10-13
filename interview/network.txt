@@ -228,6 +228,9 @@
 
 11、HTTP2 中优先级的概念是强制的吗？
 
+12、HTTP 中 PUT 和 POST 有什么区别？
+	(tips：PUT操作是幂等的，PUT操作的更新是全量更新，POST允许更新数据部分内容，两者都有创建语义)
+
 // 其他相关
 1、iptables实现原理，使用了哪些算法？
 
@@ -266,3 +269,10 @@
    （tips：相同域名区分请求ip/区域返回不同的目的IP）
 18、如何查看当前机器上的路由信息？
    （tips：route -n 命令）
+
+19、SNAT 和 DNAT FULLNAT 分别有什么作用？
+
+20、上述几个NAT分别在netfilter哪个hook点工作？
+	(tips：SNAT在postrouting hook点工作)
+	
+21、什么L4交换机？
