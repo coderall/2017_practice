@@ -276,3 +276,6 @@
 	(tips：SNAT在postrouting hook点工作)
 	
 21、什么L4交换机？
+
+22、TLS 协议能否保证数据一致性？
+   （tips：使用MAC算法，一种类hash算法，来保证数据一致性）
