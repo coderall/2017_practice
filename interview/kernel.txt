@@ -123,6 +123,11 @@
 57、当内核现在正处于中断处理上半部时，后面来的中断怎么处理？丢掉还是？
 	（tips：pengding）
 
+58、怎样禁止 ping 请求？
+	（tips： echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all）
+59、系统重启后上述的禁止 ping 会失效，怎么解决？
+	(tips： 在 /etc/sysctl.conf文件中添加 net.ipv4.conf.icmp_echo_ignore_all=1)
+
 // 内存管理
 
 1、malloc的实现
