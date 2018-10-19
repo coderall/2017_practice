@@ -301,6 +301,10 @@
 
 54、O_NONBLOCK 标志对普通文件有效果吗？
 	（tips：没效果）
+	
+55、ext2 文件系统的fast symbol link是怎么实现的？
+
+56、readahead 对 dir的影响？
 
 // 其他
 
