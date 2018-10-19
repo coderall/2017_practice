@@ -19,3 +19,6 @@
  # No.5 show all the CPU usage
  top \n & 1
  
+ # No.6 show the child process statistics
+ top -p ${pid} -H
+ 
