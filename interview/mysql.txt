@@ -192,3 +192,7 @@
    （tips：服务器发送所谓的挑战码用来加密客户端命令行中的密码）
    
 93、replace into 命令的语义？
+
+94、MySQL中的partition和常用的分表有什么区别和联系？
+
+95、MySQL中 count(*) count(1) count(id) 列有什么区别？
