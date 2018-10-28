@@ -309,6 +309,10 @@
 57、ext3 和 ext4 允许的子目录数分别在什么量级？
 	(tips：ext3在10k级别，ext4在100k级别)
 
+58、ext4 multi-block allocation、extents和delayed allocation分表表示什么？有什么作用？
+
+59、/proc/$PID/fd 目录下的各个文件表示什么？
+
 // 其他
 
 1、内核和用户空间通信都有哪些方法？
@@ -318,6 +322,13 @@
 
 3、CDP技术介绍？
    （tips：持续数据持久化，通过内核层的hook来保证数据的安全性）
+
+4、InfiniBand的带宽能达到多少？ Optic Fabric带宽能达到多少？
+	(tips：200G，400G)
+	
+5、什么是 公网下沉？
+	(在一台机器上同时部署两张网卡，一张网卡配置公网IP，另一张配置内网ip)
+
 
 // shell
 1、怎么样使alias永久生效？
