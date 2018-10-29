@@ -316,6 +316,9 @@
 
 59、/proc/$PID/fd 目录下的各个文件表示什么？
 
+60、SSD写入时，采用write back还是write through，为什么？怎么应对掉电？
+	(tips：使用write back，SSD本身有大电容，可以保证掉电Cache中数据不丢失)
+
 // 其他
 
 1、内核和用户空间通信都有哪些方法？
