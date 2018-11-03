@@ -357,6 +357,11 @@
 	
 8、__attribute__((noinline)) 标识有什么作用？
 
+9、什么是 DAS NAS SAN？
+
+10、IP SAN 的概念？
+	(tips：运行iSCSI协议的存储)
+
 
 // shell
 1、怎么样使alias永久生效？
