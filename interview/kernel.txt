@@ -367,3 +367,9 @@
 1、怎么样使alias永久生效？
 
 2、source 命令有什么作用？
+
+3、top 命令中CPU使用率高于100，是什么原因？
+	(tips：机器有多个core，显示的是各个CPU利用率之和)
+	
+4、怎样确定一个shell 命令是builtin的？
+	(tips：使用type命令查看)
