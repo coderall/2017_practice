@@ -208,6 +208,9 @@
 	
 87、MSS的取值和什么有关？
 
+88、http标准中，怎么处理leading space？
+	(tips：忽略，或者说是去掉leading space)
+
 // http
 1、什么是CNAME？
 
