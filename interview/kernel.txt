@@ -203,6 +203,13 @@
 	
 33、kswapd 消耗CPU过高的问题怎么解决？
 
+34、vm.swapiness 系统参数的作用是？
+
+35、swapoff 和 swapon 命名有什么作用？
+
+36、/proc/sys/vm/drop_caches 传入 1 2 3 分别代表什么？
+	(tips：1 表示只回收pageCache，2表示回收dentries和inode，3表示上述两个都回收)	
+
 // 文件系统
 
 1、inode号可以重复吗？
@@ -345,6 +352,9 @@
 64、机械硬盘和SSD的Cache采用的是？
 	(tips：SRAM)
 
+65、都有哪些常见的zero copy技术？
+	(tips：mmap，sendfile)
+
 // 其他
 
 1、内核和用户空间通信都有哪些方法？
@@ -384,3 +394,9 @@
 	
 4、怎样确定一个shell 命令是builtin的？
 	(tips：使用type命令查看)
+	
+5、怎样让系统生成core 文件？
+	(tips：ulimit -c unlimited)
+	
+6、怎样定制core文件命名规则？
+	(tips：/proc/sys/kernel/core_pattern)
