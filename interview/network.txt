@@ -210,6 +210,10 @@
 
 88、http标准中，怎么处理leading space？
 	(tips：忽略，或者说是去掉leading space)
+	
+89、TCP_DEFER_ACCEPT 标志有什么作用？
+
+90、sysctl -a | grep "tcp" | grep "re" 中各种重试次数与时间的设置都有哪些作用？
 
 // http
 1、什么是CNAME？
