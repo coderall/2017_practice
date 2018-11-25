@@ -132,7 +132,10 @@
 60、nice值在 O(1) 和 CFS 算法中有什么不同的含义？
 
 61、oops 和 panic 一样吗？
-	(tips：不一样，在硬中断或软中断中，如果oops，那么肯定panic，即内核崩溃，如果是在进程上下文中，那么发送SIGSEGV信号，如果配置了oops_on_panic选项为1，那么在oops中内核也会崩溃。总结就是 oops 不一定会引起 内核 panic)	
+	(tips：不一样，在硬中断或软中断中，如果oops，那么肯定panic，即内核崩溃，如果是在进程上下文中，那么发送SIGSEGV信号，如果配置了oops_on_panic选项为1，那么在oops中内核也会崩溃。总结就是 oops 不一定会引起 内核 panic)
+	
+62、write被中断打断后，会返回什么？ERRNO又会是什么？
+	(tips：尤其是在处理网络请求时要注意)
 
 // 内存管理
 
