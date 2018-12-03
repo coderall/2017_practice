@@ -181,6 +181,11 @@
 87、sync_binlog 参数表示什么意思？
 
 88、数据库crash recovery时，以binlog为准呢，还是以redo log为准？
+	(tips：binlog是server层的概念，redo log是InnoDB引擎层的概念，
+	 redo log的存在是为了保证事务的正常执行，SQL语句执行时，先写
+	 内存中的redo log记录，更改事务状态为parpare，然后写binlog记录，
+	 然后执行器调用提交事务接口，将redo log状态改为commit，这里引申出了
+	 group commit优化)	
 
 89、MySQL中的表名是大小写敏感的吗？
 
