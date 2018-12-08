@@ -125,6 +125,7 @@
 60、外部排序常用的算法是什么？
 
 61、什么是undo log？
+	(tips：在MySQL中由redo log 来产生undo段)
 
 62、什么是redo log？
 
@@ -201,3 +202,10 @@
 94、MySQL中的partition和常用的分表有什么区别和联系？
 
 95、MySQL中 count(*) count(1) count(id) 列有什么区别？
+
+96、什么是 Query Cache？有什么作用？
+	(tips：query cache用来缓存select 查询语句和对应的结果
+	这样，在下次执行统一语句时，就可以避免再走解释，优化等逻辑，
+	但是由于和查询语句强相关，这也导致query cache的作用不大，除非
+	执行的语句基本一致。MySQL8.0 版本已经去掉了Query Cache功能，
+	这样每一条SQL语句在执行时都需要走解析，优化等等的逻辑)
