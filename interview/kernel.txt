@@ -146,6 +146,10 @@
 64、怎样查看进程具体的上下文切换数据？
 	(tips：pidstat -w 参数可以查看上下文切换是自愿还是被动
 	更加具体的中断信息，需要查看/proc/interrupts文件中数据)
+	
+65、top 或 pidstat中展示的CPU使用率信息怎么计算？
+	(tips：通过/proc/cpu 信息计算或者 /proc/{pid}/stat
+	计算方式其实是1-TimeIdle/TimeTotal)
 
 // 内存管理
 
