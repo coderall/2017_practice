@@ -410,6 +410,34 @@
 	
 78、同一个设备，允许在不同的挂载点，挂载两次吗？
 	(tips：允许，内核中有一个super block，但是对应不同的vfsmount)
+	
+79、libaio的实现原理？
+	(tips：封装了内核原生支持的5个异步io系统调用，glibc的实现中是用线程池来模拟异步操作)
+	
+80、aio的实现原理？
+	(tips：内部实现了一个队列，ring buffer，然后通过状态机来记录各个状态的io操作)
+	
+81、aio相比同步io优点？
+	(tips：增加了queue size，增加了流水线处理，异步完成io)
+	
+82、libaio的缺点有哪些？
+	(tips：1、需要O_DIRECT支持，在不支持O_DIRECT的文件系统或设备上，不能使用
+			2、不支持sync语义
+			3、不能支持socket文件)
+			
+83、dirty page怎么同步回磁盘？
+	(tips：通过pdflush内核线程，刚开始pdflush是根据dirty page的数量多少来创建，
+	后面修改为一个BDI(backing device info)磁盘设备一个pdflush)
+	
+84、dirty page什么时候刷回磁盘？
+	(tips：有两个参数，一个是时间，一个是/proc/sys/vm/dirty_ratio参数)
+	
+85、怎么查看磁盘设备的 major minor 号？
+	(tips：在 /dev 目录下 ls 一下，输出中就有major minor号)
+	
+86、O_SYNC fsync fdatasync有什么区别？
+	(tips：三个都表示数据同步，第一个是在一次写入中完成，第二个和第一个操作过程类似，
+	但是要多一次额外的函数调用，第三个较为轻量，只同步数据，不同步meta data)
 
 // 其他
 
