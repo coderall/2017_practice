@@ -218,3 +218,6 @@
 98、MySQL中B+树的分叉数目一般是多少？可以动态调整吗？
 	(tips：目前看来直接调整是不可以的，但是可以通过缩小key大小、
 	调整page大小来间接的达到调整叉数的目的)
+	
+99、MySQL中的异步IO读写依靠什么实现？
+	（tips：依赖于libaio，但不是所有的IO操作都依靠异步，一般只用于read-ahead和write data file pages场景）
