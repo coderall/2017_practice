@@ -142,6 +142,9 @@
 56、UPD socket什么时候可以使用read，什么时候可以使用write？
 
 57、服务器端出现大量CLOSE_WAIT状态的socket的原因有哪些？
+	(tips：close_wait是在应答了第一次的FIN后的状态，不管哪一端出现大量的CLOSE_WAIT，都说明程序中的逻辑
+	没有尽快的close掉对端已经close的连接。如果出现在服务端，还有可能是accept的backlog过大，导致程序忙于
+	accept新连接，而没有及时处理close连接)
 
 58、LVS中负载均衡的实现都有哪些方式，有哪些优化方式？
 
@@ -214,6 +217,13 @@
 89、TCP_DEFER_ACCEPT 标志有什么作用？
 
 90、sysctl -a | grep "tcp" | grep "re" 中各种重试次数与时间的设置都有哪些作用？
+
+91、CLOSE_WAIT状态有timeout吗？
+	(tips：没有，如果没有及时close，那么这个状态将一直保持)
+	
+92、LAST_ACK状态有timeout吗？
+	(tips：被动关闭一方在发送FIN后，状态转为LAST_ACK，这时的timeout等同于普通发送数据等待ack的逻辑
+	，如果超时没有收到ack，那么将重发FIN，直到收到对方响应，或超过最大重传次数，socket将会被关闭)
 
 // http
 1、什么是CNAME？
