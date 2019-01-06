@@ -94,6 +94,7 @@
 33、四元组包括哪些数据，五元组包括哪些数据？
 
 34、TCP_NODELAY 标志有什么作用？
+	(tips：TCP_NODELAY用来关闭nagle算法)
 
 35、SO_REUSEADDR 标志有什么作用？
 
@@ -224,6 +225,18 @@
 92、LAST_ACK状态有timeout吗？
 	(tips：被动关闭一方在发送FIN后，状态转为LAST_ACK，这时的timeout等同于普通发送数据等待ack的逻辑
 	，如果超时没有收到ack，那么将重发FIN，直到收到对方响应，或超过最大重传次数，socket将会被关闭)
+	
+93、Nginx处理惊群问题的策略？
+	(tips：刚开始通过一个mutex在应用层处理惊群，但是在大量随机访问情况下发现惊群问题不是很严重，就
+	默认不开启这个锁，再到新版的内核通过REUSEPORT标志来彻底解决了惊群)
+	
+94、Nagle算法有什么作用？
+	(tips：Nagle算法是在收到对端的ack之前，积攒本地socket的数据到至少一个mss大小，这样能提高整体的传输吞吐量，
+	但不好的影响就是增加了访问延迟)
+	
+95、TCP_CORK 的作用是？
+	(tips：作用和TCP_NODELAY相反，告诉内核，应用层后面还有数据要传输，暂时不要开启本次的发送动作，直到buffer中的数据超过某个limit，
+	当TCP_NODELAY和TCP_CORK同时指定时，较早的内核中这两个参数的行为是互斥的，但是新版的内核更倾向于TCP_CORK)
 
 // http
 1、什么是CNAME？
