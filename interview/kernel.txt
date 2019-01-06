@@ -225,7 +225,12 @@
 35、swapoff 和 swapon 命名有什么作用？
 
 36、/proc/sys/vm/drop_caches 传入 1 2 3 分别代表什么？
-	(tips：1 表示只回收pageCache，2表示回收dentries和inode，3表示上述两个都回收)	
+	(tips：1 表示只回收pageCache，2表示回收dentries和inode，3表示上述两个都回收)
+
+37、缓存一致性协议有哪几种实现方式？
+	(tips：基于目录的MESI实现和基于总线通讯的实现)
+	
+38、Power系列CPU 和 x86CPU 的比较？
 
 // 文件系统
 
@@ -438,6 +443,70 @@
 86、O_SYNC fsync fdatasync有什么区别？
 	(tips：三个都表示数据同步，第一个是在一次写入中完成，第二个和第一个操作过程类似，
 	但是要多一次额外的函数调用，第三个较为轻量，只同步数据，不同步meta data)
+	
+87、Ext4 extents的作用是？
+	(tips：将同一文件的数据临近存放，减少之前间接块索引导致的多次读取元数据，
+	同时增加预读效果，加快truncate操作)
+	
+88、Ext4 multiblock allocation概念？
+	(tips：之前的ext文件系统分配文件block时是一次分配一个block，性能较低)
+	
+89、SSD的page 、block分别指？
+	(tips：page是读写的最小单位，一般为4KB，block由一组page构成，是erase操作的单位)
+	
+90、SSD中的page可以overwrite吗？
+	(tips：不能，如果要修改原page中的数据，需要先找到一个处于clean状态的page，
+	然后拷贝原数据，再写入新的page中，原page装填置为stale)
+	
+91、SSD 中 wear leveling 作用是？
+	(tips：SSD中每一个cell都有固定的寿命，如果频繁操作某一些cell，会加快这些cell的失效，
+	wear leveling 的作用就是尽可能的将读写操作分布于整个SSD中，而不是集中于某一些cell)
+	
+92、SSD中，怎么回收处于stale状态的page？
+	(tips：TODO)
+	
+93、SSD中TRIM操作提出的背景？
+	(tips：文件系统级数据删除了，但是SSD控制器并没有感知到，可能会影响到后续的文件读写)
+	
+94、e2fsck在1EB大小的文件系统上，需要119年才能完成
+
+95、Ext系列文件系统中 block group 对于文件系统整体大小的限制？
+	(tips：一个block group 128M，一个block group描述符64B，那么一个block group 可以放 128M/64个描述符，
+	再乘以128M，整个文件系统的大小就为 128M/64 * 128M)
+	
+96、Ext4 文件系统中单文件16TB的限制怎么来的？
+	(tips：之前stat的结果中，i_blocks表示的是以512字节为单位的扇区数量，现在改为4KBpage的数量，
+	那么单个文件的大小就是 2^32 * 4KB)
+	
+97、Ext4 文件系统inode number多少位？
+	(tips：32位)
+	
+98、Ext3 文件系统的目录组织结构是？
+	(tips：有论文指出，ext3文件系统仍然沿用了ext2文件的目录组织结构，即链式结构，
+	这个还需要考证，因为有其他论文在描述ext3对ext2的优化时提到ext3已经使用了hash的方法)
+	
+99、Ext4 文件系统的 preallocation？
+	(tips：对于数据库这种需要持续写入的数据的应用，如果文件系统层能提前分配好写入文件数据需要的block，
+	那么会提高上层应用性能)
+	
+100、fallocate 函数作用？
+	(tips：显示的调用preallocate过程，提前分配数据块)
+	
+101、Ext4 文件系统提供了纳秒级的时间戳
+
+102、ext2/3 文件系统中磁盘上inode大小为 128字节，ext4 文件系统磁盘上inode大小为256字节
+
+103、iCache 和 dCache的作用分别是什么？Cache的 key 是什么？
+
+104、简单描述下FUSE？
+	(tips：FUSE是一个用户态文件系统实现，由内核模块和libfuse组成，内核模块抽象了一个fuse文件系统和特殊的/dev/fuse文件，
+	用户态的操作通过VFS导向fuse实现，再封装为对应的fuse请求数据写入/dev/fuse，用户态的libfuse轮询读取/dev/fuse文件，
+	解析出对应的操作类型和数据，再调用用户自己实现的各个FUSE接口，如open，read，write等，用户态程序返回后，再将结果返回给内核模块，
+	内核模块再将结果返回给最初的用户态)
+	
+105、快速符号链接原理是？
+	(tips：其实还是符号链接，只不过链接的具体数据不存放在文件block中，而是inode中，
+	这样减少了数据从磁盘的读取操作，更加快速)
 
 // 其他
 
