@@ -563,6 +563,7 @@
 116、fdatasync 是只同步数据，不同步meta吗？
 	(tips：fdatasync也要同步meta，如果meta中只有mtime等不影响真正数据一致性的修改，则会忽略)
 
+
 // 其他
 
 1、内核和用户空间通信都有哪些方法？
