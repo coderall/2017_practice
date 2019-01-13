@@ -559,9 +559,12 @@
 
 115、文件系统中的碎片有哪几种形式？
 	(tips：single file fragmentation 、 relevant file fragmentation 、 fress space fragmentation)
+<<<<<<< HEAD
 	
 116、fdatasync 是只同步数据，不同步meta吗？
 	(tips：fdatasync也要同步meta，如果meta中只有mtime等不影响真正数据一致性的修改，则会忽略)
+=======
+>>>>>>> 7a2a4b6bcaf7490f3706631cf2ccb09d207f207e
 
 // 其他
 
