@@ -21,6 +21,8 @@
 
 5、怎样将stdou和stderr同时重定向到某文件？
 	(tips： &> )	
+	
+6、pip 的安装方式 curl https://boostrap.pypa.io/2.6/get-pip.py | python
 
 
 // 其他
