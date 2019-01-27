@@ -1,6 +1,13 @@
 --- some popular network interview questions,mostly about TCP/IP ---
 --- TCP/IP 常见网络面试 笔试题 ---
 
+// IP
+
+1、路由器可以隔离广播域吗？ 交换机可以隔离广播域吗？
+	(tips：路由器可以，交换机不行)
+	
+2、什么是VLAN？
+
 // UDP
 
 1、UDP 可以使用connect吗？
