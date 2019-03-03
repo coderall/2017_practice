@@ -323,6 +323,21 @@
 	那么内核空间是否可以修改该page的内容呢？
 	(tips：可以，内核空间和用户空间使用的PTE不一样，内核利用KMAP机制映射页面是可写的)
 	
+65、如何由mm数据结构和虚拟地址vaddr 找到对应的VMA？
+	(tips：vma记录在以起始地址为key的一个红黑树中，所以只需要查找这个红黑树就可以找到)
+	
+66、如何由page和VMA找到虚拟地址vaddr？
+	(tips：page->index记录了vma中的偏移量，加上vma->start_addr)
+	
+67、如何由page找到所有映射的VMA？
+	(tips：反向映射的实现)
+	
+68、如何由VMA和vaddr找出相应的page数据结构
+	(tips：根据vaddr 在页表中查找到pfn，然后在全局page数组中根据下标访问)
+	
+69、什么是OOM？
+	(tips：内存紧张时，向进程发送SIGKILL信号)
+	
 
 // 文件系统
 
