@@ -24,6 +24,12 @@
 	
 6、pip 的安装方式 curl https://boostrap.pypa.io/2.6/get-pip.py | python
 
+7、shell中怎样进行字符串前缀匹配？
+	(tips： [[ $STR == "test*" ]] )
+	
+8、shell 中字符串比较大小？
+	(tips：和上面一样，使用 [[ a > b ]] 来进行比较)
+
 
 // 其他
 
