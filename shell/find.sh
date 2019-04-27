@@ -25,3 +25,6 @@ find / -name filename -type f -exec rm '{}' \;
 # Note.4 recursively find the empty dir and delete
 find . -type d -empty -print
 find . -type d -empty -delete
+
+# Note.5 find the file with regex
+find . -type f -regextype sed -regex "./*[a-z]\{12\}"
